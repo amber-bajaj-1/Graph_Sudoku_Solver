@@ -1,4 +1,4 @@
-Creates custom graph-theoretic classes to impose a graph structure on standard 9x9 Sudokus, transforming Sudoku-solving into a node-colouring problem (where numerical values assigned to each node represent different colours)
+Custom graph-theoretic classes to impose a graph structure on standard 9x9 Sudokus, transforming Sudoku-solving into a node-colouring problem (where numerical values assigned to each node represent different colours)
 
 Initially, naive depth-first and breadth-first solving algorithms were implemented, as a basis to test optimized-solvers (and to practice the techniques I studied in my introductory computer science course).
 Then, various methods were explored to create a more optimized solver. The current version implements: (1) a most-constrained-value heuristic, wherein unassigned nodes with the least number of possible values are assigned first; and (2) a least-constraining-value heuristic — when a guess needs to be made, values that have the lowest-impact on unassigned neighbours are chosen first.  
